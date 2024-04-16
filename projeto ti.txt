@@ -1,0 +1,3 @@
+Busca pet, tem a funcionalidade de auxiliar a busca do seu animal de estimação através do QrCode e também auxiliar através da comunidade a achar seu pet de estimação o mais rápido possível pois as 15 primeiras horas são cruciais.
+Queremos também colocar dicas de veterinária, petshop e agropecuaria mais em contas da região, no cadastro do seu Pet terá uma carteira de vacina online para você acompanhar e levar com você para onde você for com seu Pet, pois tem cidade e estados que cobram vacinas específicas de animais de estimação.
+Queremos realizar um sistema de compartilhamento onde o usuário na hora que perdeu seu Pet através de suas redes sociais. O Qrcode em si o usuários terá que imprimir  e colocar na coleira do seu pet totalmente de graça.

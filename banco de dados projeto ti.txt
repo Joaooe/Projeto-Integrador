@@ -1,0 +1,52 @@
+create table endereco(
+id_endereco int primary key not null,
+cep int not null,
+uf varchar(40) not null,
+cidade varchar(40) not null,
+bairro varchar(40) not null,
+logradouro varchar(60) not null,
+numero int not null,
+complemento varchar(100)
+);
+
+create table usuarios (
+id_usuario INT PRIMARY KEY NOT NULL,
+cpf INT NOT NULL,
+nome VARCHAR(20) NOT NULL,
+sobrenome VARCHAR(40) NOT NULL,
+id_endereco INT NOT NULL references endereco(id_endereco),
+telefone BIGINT NOT NULL
+);
+
+create table animal (
+nome VARCHAR(20) NOT NULL,
+Idade INT NOT NULL,
+Cor VARCHAR(20) NOT NULL,
+Pelagem VARCHAR(30) NOT NULL,
+Sexo CHAR(1) NOT NULL,
+ID_Animal INT PRIMARY KEY NOT NULL,
+Descricao VARCHAR(120) NOT NULL,
+ID_Categoria INT NOT NULL REFERENCES Categoria(ID_Categoria),
+ID_Vacina INT NOT NULL REFERENCES Vacinas(ID_Vacina),
+ID_Usuario INT NOT NULL REFERENCES Usuarios(ID_Usuario)
+);
+
+CREATE TABLE Categoria (
+ID_Categoria INT PRIMARY KEY NOT NULL,
+Especie VARCHAR(20) NOT NULL,
+Raca VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Vacinas (
+ID_Vacina INT PRIMARY KEY NOT NULL,
+Nome VARCHAR(120) NOT NULL,
+Data_Aplicacao DATE NOT NULL,
+Local_Aplicacao VARCHAR(100) NOT NULL
+);
+
+
+
+
+
+
+
